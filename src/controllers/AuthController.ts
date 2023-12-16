@@ -10,7 +10,7 @@ class AuthController {
 
         await db.user.create({ username, password: hashedPassword });
 
-        return res.send(CreateApiResponse.createApiResponse(`aacount ${username} created successfully`, null, "success"));
+        return res.send(CreateApiResponse.createApiResponse(`account ${username} created successfully`, null, "success"));
     };
 
     login = async (req: Request, res: Response): Promise<Response> => {
