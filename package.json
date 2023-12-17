@@ -2,12 +2,14 @@
   "name": "typescript-express",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Nusendra",
+  "author": "zaqiikhwan",
   "license": "MIT",
   "scripts": {
+    "start": "node ./build/index.js",
     "tsc": "rm -rf build/ && tsc",
     "ts": "rm -rf build/ && tsc -w",
-    "dev": "nodemon ./build/index.js"
+    "dev": "nodemon ./build/index.js",
+    "build": "rm -rf build/ && tsc"
   },
   "devDependencies": {
     "@types/bcrypt": "^3.0.0",
